@@ -10506,7 +10506,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: b750a02abb585f94da2b294f33f0a247, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 91ccb7864898a7b4cba1bc716d4cdbab, type: 2}
+      objectReference: {fileID: 2100000, guid: 13a8a774de18f6c40b753a08959df451, type: 2}
     - target: {fileID: 919132149155446097, guid: b750a02abb585f94da2b294f33f0a247, type: 3}
       propertyPath: m_Name
       value: Billboard (5)
@@ -47022,7 +47022,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: b750a02abb585f94da2b294f33f0a247, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 8280c583a71cccb47bb92d01ac8fac38, type: 2}
+      objectReference: {fileID: 2100000, guid: 88e65361991a75b4eb90d710aed37668, type: 2}
     - target: {fileID: 919132149155446097, guid: b750a02abb585f94da2b294f33f0a247, type: 3}
       propertyPath: m_Name
       value: Billboard (2)
