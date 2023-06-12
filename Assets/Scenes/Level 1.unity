@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.6792453, g: 0.55001205, b: 0.32936987, a: 1}
   m_FogMode: 2
   m_FogDensity: 0.03
@@ -3573,7 +3573,7 @@ RectTransform:
   - {fileID: 2114883857}
   - {fileID: 1257599773}
   m_Father: {fileID: 0}
-  m_RootOrder: 110
+  m_RootOrder: 115
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6647,7 +6647,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 267
+  m_RootOrder: 273
   m_LocalEulerAnglesHint: {x: 112.791, y: 145.55899, z: -36.091003}
 --- !u!1001 &353776346
 PrefabInstance:
@@ -9348,7 +9348,7 @@ Transform:
   - {fileID: 457127806}
   - {fileID: 1394228829}
   m_Father: {fileID: 0}
-  m_RootOrder: 109
+  m_RootOrder: 113
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &470528186 stripped
 GameObject:
@@ -14119,7 +14119,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 105
+  m_RootOrder: 109
   m_LocalEulerAnglesHint: {x: 108.763, y: -132.615, z: -72.518005}
 --- !u!1001 &673572200
 PrefabInstance:
@@ -17860,7 +17860,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 266
+  m_RootOrder: 270
   m_LocalEulerAnglesHint: {x: 112.791, y: 145.55899, z: -36.091003}
 --- !u!1001 &884655162
 PrefabInstance:
@@ -19482,7 +19482,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 116
+  m_RootOrder: 121
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &960287538 stripped
 Transform:
@@ -31733,7 +31733,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 265
+  m_RootOrder: 268
   m_LocalEulerAnglesHint: {x: 112.791, y: 145.55899, z: -36.091003}
 --- !u!1001 &1469756681
 PrefabInstance:
