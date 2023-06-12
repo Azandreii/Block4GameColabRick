@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0.6792453, g: 0.55001205, b: 0.32936987, a: 1}
   m_FogMode: 2
-  m_FogDensity: 0.035
+  m_FogDensity: 0.03
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.3207547, g: 0.3000863, b: 0.26144534, a: 1}
@@ -7527,7 +7527,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 430142115}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.64, z: 0}
+  m_LocalPosition: {x: -0.07, y: 0.69, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8015,6 +8015,10 @@ PrefabInstance:
     - target: {fileID: 1395108941318139213, guid: efe788d718bf07a4f99dfcc412b348ba, type: 3}
       propertyPath: m_Name
       value: TestNPC 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1395108941318139213, guid: efe788d718bf07a4f99dfcc412b348ba, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1395108941318139215, guid: efe788d718bf07a4f99dfcc412b348ba, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -11245,8 +11249,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 603708121}
-  m_LocalRotation: {x: -0, y: -0.999796, z: -0, w: 0.02020068}
-  m_LocalPosition: {x: -106.09, y: 0.94857025, z: -1.52}
+  m_LocalRotation: {x: -0, y: -0.89844835, z: -0, w: -0.43907934}
+  m_LocalPosition: {x: -108.93, y: 1.21, z: -5.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11256,7 +11260,7 @@ Transform:
   - {fileID: 707750298}
   m_Father: {fileID: 0}
   m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: -177.685, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -232.09, z: 0}
 --- !u!1 &605026720 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5937228839760470303, guid: bd9aec2aa71dc294d921afa0d67941fb, type: 3}
@@ -34488,6 +34492,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1953625818e9d434e805bb1d0da1e10d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1953625818e9d434e805bb1d0da1e10d, type: 3}
 --- !u!1 &1773920878
@@ -38815,9 +38823,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2018185393}
-  - component: {fileID: 2018185396}
   - component: {fileID: 2018185395}
   - component: {fileID: 2018185394}
+  - component: {fileID: 2018185396}
+  - component: {fileID: 2018185399}
+  - component: {fileID: 2018185398}
+  - component: {fileID: 2018185397}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
@@ -38972,6 +38983,45 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4, y: 4, z: 4}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &2018185397
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018185392}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4, z: 4}
+  m_Center: {x: 0, y: 0, z: -8}
+--- !u!65 &2018185398
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018185392}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4, z: 4}
+  m_Center: {x: -4, y: 0, z: -4}
+--- !u!65 &2018185399
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018185392}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4, z: 4}
+  m_Center: {x: 4, y: 0, z: -4}
 --- !u!4 &2019618479 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2426298156747254851, guid: bd9aec2aa71dc294d921afa0d67941fb, type: 3}

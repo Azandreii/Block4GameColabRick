@@ -46,6 +46,7 @@ public class ListenForTrash : MonoBehaviour
             canSprint = true;
             Trashometer.transform.GetChild(0).gameObject.SetActive(false);
             Trashometer.transform.GetChild(1).gameObject.SetActive(true);
+            RenderSettings.fogDensity = 0.02f;
         }
         if (trashAmount >= 6)
         {
@@ -53,6 +54,7 @@ public class ListenForTrash : MonoBehaviour
             //gameManager.TrashCollected.RemoveListener(Player15Trash);
             Trashometer.transform.GetChild(1).gameObject.SetActive(false);
             Trashometer.transform.GetChild(2).gameObject.SetActive(true);
+            RenderSettings.fogDensity = 0.01f;
         }
 
     }
