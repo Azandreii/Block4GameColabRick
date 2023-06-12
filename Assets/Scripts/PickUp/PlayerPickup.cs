@@ -17,7 +17,7 @@ public class PlayerPickup : MonoBehaviour
     {
 
         //check if pressed "E" while lookin at grabable obj to pick up
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0) )
         {
             if (objectGrabable == null) { 
                 // not  carrying an obj, try to grab
