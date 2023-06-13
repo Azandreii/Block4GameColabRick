@@ -11,7 +11,7 @@ public class CollectTrash : MonoBehaviour
     {
         if (target.tag == "Trash")
         {
-            Destroy(target.gameObject);
+            target.gameObject.SetActive(false);
             gameManager.addTrash();
             Debug.Log("Collected Trash");
 

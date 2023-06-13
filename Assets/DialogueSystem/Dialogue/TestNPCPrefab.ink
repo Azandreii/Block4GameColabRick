@@ -1,14 +1,16 @@
+<color=\#00FF00>Test Plex</color> ! #speaker:Plex #portrait:plex_neutral #layout:left
 -> main
 
 === main ===
-test npc 2 dialogue
+Are you lost?
     + [Yes]
-        -> chosen("Yes")
+        -> chosen("Yes.")
     + [No]
         -> chosen("No")
     + [Maybe??]
-        -> chosen("Maybe??")
+        -> chosen("Maybe")
         
 === chosen (answer) ===
-ur answer is: {answer}.
- -> END
+ <color=\#FF0000>{answer}</color>. #speaker:Noah #portrait:noah_neutral #layout:right
+Test Mabel. #speaker:Mabel #portrait:mabel_neutral #layout:left
+ -> END 

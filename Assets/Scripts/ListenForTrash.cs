@@ -11,6 +11,8 @@ public class ListenForTrash : MonoBehaviour
     public bool enoughTrash = false;
     public GameObject Trashometer;
     public int totalTrash = 0;
+    public GameObject PlexLevel1;
+    public GameObject specificTrash;
 
     // enable sprint after first trash ammount trashhold
     public bool canSprint = false;
@@ -39,7 +41,7 @@ public class ListenForTrash : MonoBehaviour
 
     private void Player15Trash(int trashAmount)
     {
-        if (trashAmount >= 3)
+        if (trashAmount >= 10)
         {
             //enoughTrash = true;
             //gameManager.TrashCollected.RemoveListener(Player15Trash);
@@ -47,8 +49,13 @@ public class ListenForTrash : MonoBehaviour
             Trashometer.transform.GetChild(0).gameObject.SetActive(false);
             Trashometer.transform.GetChild(1).gameObject.SetActive(true);
             RenderSettings.fogDensity = 0.02f;
+            if(!specificTrash.activeSelf)
+            {
+                Destroy(PlexLevel1);
+            }
+            
         }
-        if (trashAmount >= 6)
+        if (trashAmount >= 20)
         {
             //enoughTrash = true;
             //gameManager.TrashCollected.RemoveListener(Player15Trash);

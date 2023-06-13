@@ -8,7 +8,7 @@ public class PlayerPickup : MonoBehaviour
     [SerializeField] private Transform playerCameraTransform;
     [SerializeField] private Transform objectGrabPointTransform;
     [SerializeField] private LayerMask pickUpLayerMask;
-    float pickUpDistance = 2f;
+    float pickUpDistance = 3f;
 
     private ObjectGrabable objectGrabable;
 

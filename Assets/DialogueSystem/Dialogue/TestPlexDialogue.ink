@@ -12,5 +12,5 @@ Are you lost?
         
 === chosen (answer) ===
  <color=\#FF0000>{answer}</color>. #speaker:Noah #portrait:noah_neutral #layout:right
-Ok, let me help you. #speaker:Plex #portrait:plex_sad #layout:left
+Ok, let me help you. #speaker:Plex #portrait:plex_neutral #layout:left
  -> END 
