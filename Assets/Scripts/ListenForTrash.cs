@@ -8,7 +8,7 @@ public class ListenForTrash : MonoBehaviour
 
     public GameManager gameManager;
     public bool playerHasKey = false;
-    public bool enoughTrash = false;
+    public bool enoughTrash1 = false;
     public GameObject Trashometer;
     public int totalTrash = 0;
     public GameObject PlexLevel1;
@@ -19,7 +19,10 @@ public class ListenForTrash : MonoBehaviour
 
     private void Update()
     {
-        
+        if ( enoughTrash1 && !specificTrash.activeSelf)
+        {
+            Destroy(PlexLevel1);
+        }
     }
 
     private void OnEnable()
@@ -43,16 +46,12 @@ public class ListenForTrash : MonoBehaviour
     {
         if (trashAmount >= 10)
         {
-            //enoughTrash = true;
+            enoughTrash1 = true;
             //gameManager.TrashCollected.RemoveListener(Player15Trash);
             canSprint = true;
             Trashometer.transform.GetChild(0).gameObject.SetActive(false);
             Trashometer.transform.GetChild(1).gameObject.SetActive(true);
             RenderSettings.fogDensity = 0.02f;
-            if(!specificTrash.activeSelf)
-            {
-                Destroy(PlexLevel1);
-            }
             
         }
         if (trashAmount >= 20)
