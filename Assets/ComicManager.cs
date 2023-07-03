@@ -2,45 +2,65 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class ComicManager : MonoBehaviour
 {
 
-    [SerializeField] private GameObject scrollComic;
-    public float scrollSpeed = 10f;
-    public Vector3 from;
-    public Vector3 to;
-    public Vector3 tra;
+    public float doubleTapTime = 1f;
+    private float elapsedTime;
+    private int pressCount;
+    public VideoPlayer vp;
 
-    /* public void ScrollNextPage()
+    private void Update()
     {
-        currentPos = scrollComic.transform.position;
+        // count the number of times space is pressed
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            pressCount++;
+        }
 
-        targetPos = new Vector3(currentPos.x, currentPos.y +1180, currentPos.z);
+        // if they pressed at least once
+        if (pressCount > 0)
+        {
+            // count the time passed
+            elapsedTime += Time.deltaTime;
 
-        currentPos = Vector3.Lerp(currentPos, targetPos, scrollSpeed);
+            // if the time elapsed is greater than the time limit
+            if (elapsedTime > doubleTapTime)
+            {
+                resetPressTimer();
+            }
+            else if (pressCount == 2) // otherwise if the press count is 2
+            {
+                SceneManager.LoadScene("Level 1");
+                resetPressTimer();
+            }
+        }
 
-        //targetPos = scrollComic.transform.position.y + 1180f;
+        if (Input.GetKey(KeyCode.E))
+        {
+            vp.playbackSpeed = 0f;
+        }
+        else if (Input.GetKey(KeyCode.F))
+        {
+            vp.playbackSpeed = 2f;
+        }
+        else
+        { 
+            vp.playbackSpeed = 1f;
+        }
+
     }
 
-    public void ScrollLastPage()
+    //reset the press count & timer
+    private void resetPressTimer()
     {
-        currentPos = scrollComic.transform.position;
-
-        targetPos = new Vector3(currentPos.x, currentPos.y - 1180, currentPos.z);
-
-        currentPos = Vector3.Lerp(currentPos, targetPos, scrollSpeed);
-
-        //targetPos = scrollComic.transform.position.y + 1180f;
-    } 
-
-    IEnumerator Next()
-    {
-        from = scrollComic.transform.position;
-        to = new Vector3(from.x, from.y +1180, from.z);
-        tra = trasnform
-
-
-    } */
+        pressCount = 0;
+        elapsedTime = 0;
+    }
 
 }
+
+

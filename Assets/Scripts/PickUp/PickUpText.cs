@@ -9,7 +9,7 @@ public class PickUpText : MonoBehaviour
     [SerializeField] private Transform objectGrabPointTransform2;
     [SerializeField] private LayerMask pickUpLayerMask2;
     public GameObject PickUpText2;
-    float pickUpDistance = 2f;
+    float pickUpDistance = 5f;
 
     private ObjectGrabable objectGrabable;
 

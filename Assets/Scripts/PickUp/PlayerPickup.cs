@@ -8,7 +8,7 @@ public class PlayerPickup : MonoBehaviour
     [SerializeField] private Transform playerCameraTransform;
     [SerializeField] private Transform objectGrabPointTransform;
     [SerializeField] private LayerMask pickUpLayerMask;
-    float pickUpDistance = 3f;
+    public float pickUpDistance = 3f;
 
     private ObjectGrabable objectGrabable;
 
@@ -24,9 +24,11 @@ public class PlayerPickup : MonoBehaviour
                 
                 if (Physics.Raycast(playerCameraTransform.position, playerCameraTransform.forward, out RaycastHit raycastHit, pickUpDistance, pickUpLayerMask))
                 {
+
                     if (raycastHit.transform.TryGetComponent(out objectGrabable)) {
                         objectGrabable.Grab(objectGrabPointTransform);
                         Debug.Log(objectGrabable);
+                        objectGrabable.GetComponent<Rigidbody>().isKinematic = false;
                     }
                 }
             } else
@@ -34,8 +36,11 @@ public class PlayerPickup : MonoBehaviour
                 //Carrying object, drop
                 objectGrabable.Drop();
                 objectGrabable = null;
+               // objectGrabable.GetComponent<Rigidbody>().isKinematic = true;
             }
         }
-            
+
+
+
     }
 }

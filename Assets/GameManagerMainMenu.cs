@@ -7,11 +7,17 @@ public class GameManagerMainMenu : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene("ComicIntroTest");
     }
 
     public void Credits()
     {
         SceneManager.LoadScene("Credits");
     }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("StartMenu");
+    }
+
 }
