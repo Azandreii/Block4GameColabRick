@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using static Unity.VisualScripting.Member;
 
 public class ListenForTrash : MonoBehaviour
 {
@@ -12,17 +13,22 @@ public class ListenForTrash : MonoBehaviour
     public GameObject Trashometer;
     public int totalTrash = 0;
     public GameObject PlexLevel1;
-    public GameObject specificTrash;
+   // public GameObject specificTrash;
+    public AudioSource OST;
+    public AudioClip OST2;
+    public AudioClip OST3;
+    public bool OST2DONE = false;
+    public bool OST3DONE = false;
 
     // enable sprint after first trash ammount trashhold
     public bool canSprint = false;
 
     private void Update()
     {
-        if ( enoughTrash1 && !specificTrash.activeSelf)
+        /*if ( enoughTrash1 && !specificTrash.activeSelf)
         {
             Destroy(PlexLevel1);
-        }
+        }*/
     }
 
     private void OnEnable()
@@ -44,7 +50,7 @@ public class ListenForTrash : MonoBehaviour
 
     private void Player15Trash(int trashAmount)
     {
-        if (trashAmount >= 10)
+        if (trashAmount >= 1)
         {
             enoughTrash1 = true;
             //gameManager.TrashCollected.RemoveListener(Player15Trash);
@@ -52,15 +58,31 @@ public class ListenForTrash : MonoBehaviour
             Trashometer.transform.GetChild(0).gameObject.SetActive(false);
             Trashometer.transform.GetChild(1).gameObject.SetActive(true);
             RenderSettings.fogDensity = 0.02f;
+            if(!OST2DONE)
+            {
+                OST.clip = OST2;
+                OST.Play();
+                OST2DONE = true;
+            }
             
+
+
         }
-        if (trashAmount >= 20)
+        if (trashAmount >= 2)
         {
             //enoughTrash = true;
             //gameManager.TrashCollected.RemoveListener(Player15Trash);
             Trashometer.transform.GetChild(1).gameObject.SetActive(false);
             Trashometer.transform.GetChild(2).gameObject.SetActive(true);
             RenderSettings.fogDensity = 0.01f;
+            if (!OST3DONE)
+            {
+                OST.clip = OST3;
+                OST.Play();
+                OST3DONE = true;
+            }
+
+            
         }
 
     }
