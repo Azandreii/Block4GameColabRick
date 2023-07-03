@@ -20,4 +20,9 @@ public class GameManagerMainMenu : MonoBehaviour
         SceneManager.LoadScene("StartMenu");
     }
 
+    public void Support()
+    {
+        Application.OpenURL("https://www.worldcleanupday.nl/");
+    }
+
 }
