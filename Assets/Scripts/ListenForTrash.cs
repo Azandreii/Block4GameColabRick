@@ -1,3 +1,4 @@
+using Ink.Runtime;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -50,7 +51,7 @@ public class ListenForTrash : MonoBehaviour
 
     private void Player15Trash(int trashAmount)
     {
-        if (trashAmount >= 1)
+        if (trashAmount >= 5)
         {
             enoughTrash1 = true;
             //gameManager.TrashCollected.RemoveListener(Player15Trash);
@@ -68,7 +69,7 @@ public class ListenForTrash : MonoBehaviour
 
 
         }
-        if (trashAmount >= 2)
+        if (trashAmount >= 20)
         {
             //enoughTrash = true;
             //gameManager.TrashCollected.RemoveListener(Player15Trash);

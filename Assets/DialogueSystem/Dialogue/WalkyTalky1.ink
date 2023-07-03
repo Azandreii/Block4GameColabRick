@@ -17,7 +17,6 @@ Just make sure you get home sa... #speaker:Mabel #portrait:mabel_neutral #layout
 Mabel? Mabel??? #speaker:Noah #portrait:noah_neutral #layout:right
 The connection must've went down! #speaker:Noah #portrait:noah_neutral #layout:right
 I should hurry and find the medicine! #speaker:Noah #portrait:noah_neutral #layout:right 
-Meanwhile I can get rid of some trash as well!#speaker:Noah #portrait:noah_neutral #layout:right
-We must find a way to save this planet! <color=\#FF0000> I HATE PLASTOSIS </color></b> #speaker:Noah #portrait:noah_neutral #layout:right
+Huh? What's what on top of the <color=\#00FF00> Tower? </color></b> #speaker:Noah #portrait:noah_neutral #layout:right
 
 -> END
