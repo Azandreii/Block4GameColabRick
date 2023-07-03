@@ -25,4 +25,9 @@ public class GameManagerMainMenu : MonoBehaviour
         Application.OpenURL("https://www.worldcleanupday.nl/");
     }
 
+    public void Exit()
+    {
+        Application.Quit();
+    }
+
 }
