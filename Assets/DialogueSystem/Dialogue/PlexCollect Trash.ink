@@ -36,7 +36,7 @@ Oh, hi there, I'm Plex! #speaker:Plex #portrait:plex_neutral #layout:left
                 You want to reach to that building? #speaker:Plex #portrait:plex_neutral #layout:left
                 If you help me throw at least 5 trash in the trashbins #speaker:Plex #portrait:plex_neutral #layout:left
                 I'll help you reach it with my bionic sprint! #speaker:Plex #portrait:plex_neutral #layout:left
-                Once you're done, you'll be able to use it by pressing shit #speaker:Plex #portrait:plex_neutral #layout:left
+                Once you're done, you'll be able to use it by pressing shift #speaker:Plex #portrait:plex_neutral #layout:left
                 On my way! #speaker:Noah #portrait:noah_neutral #layout:right
                 -> DONE
                 
@@ -44,7 +44,7 @@ Oh, hi there, I'm Plex! #speaker:Plex #portrait:plex_neutral #layout:left
                 You want to reach to that building? #speaker:Plex #portrait:plex_neutral #layout:left
                 If you help me throw at least 5 trash in the trashbins #speaker:Plex #portrait:plex_neutral #layout:left
                 I'll help you reach it with my bionic sprint! #speaker:Plex #portrait:plex_neutral #layout:left
-                Once you're done, you'll be able to use it by pressing shit #speaker:Plex #portrait:plex_neutral #layout:left
+                Once you're done, you'll be able to use it by pressing shift #speaker:Plex #portrait:plex_neutral #layout:left
                 On my way! #speaker:Noah #portrait:noah_neutral #layout:right
                 
                 ** I need medicine #speaker:Noah #portrait:noah_neutral #layout:right
@@ -75,7 +75,7 @@ Oh, hi there, I'm Plex! #speaker:Plex #portrait:plex_neutral #layout:left
         You want to reach to that building? #speaker:Plex #portrait:plex_neutral #layout:left
         If you help me throw at least 5 trash in the trashbins #speaker:Plex #portrait:plex_neutral #layout:left
         I'll help you reach it with my bionic sprint! #speaker:Plex #portrait:plex_neutral #layout:left
-        Once you're done, you'll be able to use it by pressing shit #speaker:Plex #portrait:plex_neutral #layout:left
+        Once you're done, you'll be able to use it by pressing shift #speaker:Plex #portrait:plex_neutral #layout:left
         On my way!#speaker:Noah #portrait:noah_neutral #layout:right
         -> END
     
@@ -85,7 +85,7 @@ Oh, hi there, I'm Plex! #speaker:Plex #portrait:plex_neutral #layout:left
         You want to reach to that building? #speaker:Plex #portrait:plex_neutral #layout:left
         If you help me throw at least 5 trash in the trashbins #speaker:Plex #portrait:plex_neutral #layout:left
         I'll help you reach it with my bionic sprint! #speaker:Plex #portrait:plex_neutral #layout:left
-        Once you're done, you'll be able to use it by pressing shit #speaker:Plex #portrait:plex_neutral #layout:left
+        Once you're done, you'll be able to use it by pressing shift #speaker:Plex #portrait:plex_neutral #layout:left
         On my way!#speaker:Noah #portrait:noah_neutral #layout:left
         
         **Who are you? !#speaker:Noah #portrait:noah_neutral #layout:left
@@ -97,7 +97,7 @@ Oh, hi there, I'm Plex! #speaker:Plex #portrait:plex_neutral #layout:left
     You want to reach to that building? #speaker:Plex #portrait:plex_neutral #layout:left
     If you help me throw at least 5 trash in the trashbins #speaker:Plex #portrait:plex_neutral #layout:left
     I'll help you reach it with my bionic sprint! #speaker:Plex #portrait:plex_neutral #layout:left
-    Once you're done, you'll be able to use it by pressing shit #speaker:Plex #portrait:plex_neutral #layout:left
+    Once you're done, you'll be able to use it by pressing shift #speaker:Plex #portrait:plex_neutral #layout:left
     On my way! #speaker:Noah #portrait:noah_neutral #layout:right
     
         *Who are you? #speaker:Noah #portrait:noah_neutral #layout:right
